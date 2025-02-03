@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tecla Pressionada! </title>
+</head>
+<body>
+
+
+    <p id="teclas">=</p>
+
+
+    <script>
+
+        const handleKeyUp = (event) => {
+            const key = event.key;
+
+
+            if (key === "a" || key === "b" || key === "c" || key === "d") {
+                //alert(`A Tecla ${key} Foi Pressionada!`);
+                document.getElementById("teclas").innerHTML += `${key}`;
+            }
+
+
+        };
+
+        document.addEventListener("keydown", handleKeyUp);
+        
+
+
+    </script>
+
+
+</body>
+</html>
